@@ -12,7 +12,10 @@ makeCacheMatrix <- function(data = matrix())
         data  <<- value
         cache <<- NULL
     }
-    get <- function() { return(data) }
+    get <- function()      
+    { 
+        return(data)    
+    }  
     
     setCache <- function(value) { cache <<- value }
     getCache <- function()      { return(cache)   }
